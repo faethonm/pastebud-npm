@@ -1,0 +1,127 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/faethonm/.nvm/versions/node/v6.13.0/bin/node',
+1 verbose cli   '/Users/faethonm/.nvm/versions/node/v6.13.0/bin/npm',
+1 verbose cli   'unpublish',
+1 verbose cli   'pastebud@1.0.0',
+1 verbose cli   '--force' ]
+2 info using npm@3.10.10
+3 info using node@v6.13.0
+4 warn using --force I sure hope you know what you are doing.
+5 silly unpublish args[0] pastebud@1.0.0
+6 silly unpublish thing Result {
+6 silly unpublish   raw: 'pastebud@1.0.0',
+6 silly unpublish   scope: null,
+6 silly unpublish   escapedName: 'pastebud',
+6 silly unpublish   name: 'pastebud',
+6 silly unpublish   rawSpec: '1.0.0',
+6 silly unpublish   spec: '1.0.0',
+6 silly unpublish   type: 'version' }
+7 verbose getPublishConfig null
+8 silly ls normalized pastebud/1.0.0
+9 silly gentlyRm /Users/faethonm/.npm/pastebud/1.0.0 is being purged
+10 verbose gentlyRm don't care about contents; nuking /Users/faethonm/.npm/pastebud/1.0.0
+11 silly vacuum-fs purging /Users/faethonm/.npm/pastebud/1.0.0
+12 silly vacuum-fs quitting because other entries in /Users/faethonm/.npm/pastebud
+13 silly mapToRegistry name pastebud
+14 silly mapToRegistry using default registry
+15 silly mapToRegistry registry https://registry.npmjs.org/
+16 silly mapToRegistry data Result {
+16 silly mapToRegistry   raw: 'pastebud',
+16 silly mapToRegistry   scope: null,
+16 silly mapToRegistry   escapedName: 'pastebud',
+16 silly mapToRegistry   name: 'pastebud',
+16 silly mapToRegistry   rawSpec: '',
+16 silly mapToRegistry   spec: 'latest',
+16 silly mapToRegistry   type: 'tag' }
+17 silly mapToRegistry uri https://registry.npmjs.org/pastebud
+18 verbose get GET as part of write; not caching result
+19 verbose request uri https://registry.npmjs.org/pastebud?write=true
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 12:21:44 AM
+22 verbose request using bearer token for auth
+23 verbose request id 77c5ad522c60b98a
+24 http request GET https://registry.npmjs.org/pastebud?write=true
+25 http 200 https://registry.npmjs.org/pastebud?write=true
+26 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 verbose headers   'content-type': 'application/json',
+26 verbose headers   etag: '"5afa8a5d-b1a"',
+26 verbose headers   'content-encoding': 'gzip',
+26 verbose headers   'cache-control': 'max-age=0',
+26 verbose headers   'transfer-encoding': 'chunked',
+26 verbose headers   'accept-ranges': 'bytes',
+26 verbose headers   date: 'Tue, 15 May 2018 07:21:44 GMT',
+26 verbose headers   via: '1.1 varnish',
+26 verbose headers   connection: 'keep-alive',
+26 verbose headers   'x-served-by': 'cache-pao17436-PAO',
+26 verbose headers   'x-cache': 'MISS',
+26 verbose headers   'x-cache-hits': '0',
+26 verbose headers   'x-timer': 'S1526368905.643321,VS0,VE101',
+26 verbose headers   vary: 'Accept-Encoding' }
+27 silly get cb [ 200,
+27 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly get     'content-type': 'application/json',
+27 silly get     etag: '"5afa8a5d-b1a"',
+27 silly get     'content-encoding': 'gzip',
+27 silly get     'cache-control': 'max-age=0',
+27 silly get     'transfer-encoding': 'chunked',
+27 silly get     'accept-ranges': 'bytes',
+27 silly get     date: 'Tue, 15 May 2018 07:21:44 GMT',
+27 silly get     via: '1.1 varnish',
+27 silly get     connection: 'keep-alive',
+27 silly get     'x-served-by': 'cache-pao17436-PAO',
+27 silly get     'x-cache': 'MISS',
+27 silly get     'x-cache-hits': '0',
+27 silly get     'x-timer': 'S1526368905.643321,VS0,VE101',
+27 silly get     vary: 'Accept-Encoding' } ]
+28 verbose get saving pastebud to /Users/faethonm/.npm/registry.npmjs.org/pastebud_3Fwrite_3Dtrue/.cache.json
+29 verbose correctMkdir /Users/faethonm/.npm correctMkdir not in flight; initializing
+30 verbose unpublish removing attachments { shasum: '29126e3326f6186b03a601ce69e0d0bc3a6e791c',
+30 verbose unpublish   tarball: 'https://registry.npmjs.org/pastebud/-/pastebud-1.0.0.tgz',
+30 verbose unpublish   fileCount: 5,
+30 verbose unpublish   unpackedSize: 3484,
+30 verbose unpublish   'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJa+SYQCRA9TVsSAnZWagAAEUEP/RJHcEt0SGFVxgeDkBFQ\nJOBOEdRwGPLSCoYrVScbvGQN75Grabp859maMO0pvweb4tFv9WPn03rqzE4B\nXSSB74MfIiI6qCQwHg2NzhyKpZ+cp4yy3bO8l1PYHyzHrA/ZMJefp6jtGKLP\nRrwvAQD1bt5kMKzcXNXAsN42gKbMO7kFYe8UeddPAUEBXu2XIei0kT2RYer7\nsaexf9X8Em86dYhakHmLsfBPKloXZewV0pcNDCbxglKA91A0c+kgl0FVgBsf\nsvgYFfBlOBoVXo4ZqQiFim/OiSwJL6vDhmTLsw3WVk9+hh37fZd0mamEzueR\n7TXJVEWeE8TyON4TvzVn808aEXqiNi9llUkHL5dkt6D1f/ymCWW16rCoggHn\nvb6MvWOQeQFkGOEIL2Djh3Pe/9RXzfThUFr2GgKGQg94wBu9lTUCziFncuof\nHB0IFP2vXCLzcMpNJgVUe50HRDYDFFGVoAKy9r7yqrNzU2A+IWCjAkTUxbm8\nAniTaQ0wpv2BM0BigO9A3JP1m/U4/GKQyxVYrWp+qaOwza5r2ERgku8nFb12\nxWfAXGicyC3ao7mMTR3veILrkzYVy0O+Ib7FuA0tlh+c2WJ9aJlnKIhFEYfI\nB/D+2ALUIMRagtl2hQZx+sssZPzIQVaRK3+W3ai2AzFQLMm70ROsJsk42iWf\nKXiy\r\n=v1pj\r\n-----END PGP SIGNATURE-----\r\n' }
+31 info unpublish No versions remain, removing entire package
+32 verbose request uri https://registry.npmjs.org/pastebud/-rev/3-9c38aab9b6efed70a6cd6507aefee043
+33 verbose request sending authorization for write operation
+34 info attempt registry request try #1 at 12:21:44 AM
+35 verbose request using bearer token for auth
+36 http request DELETE https://registry.npmjs.org/pastebud/-rev/3-9c38aab9b6efed70a6cd6507aefee043
+37 http 400 https://registry.npmjs.org/pastebud/-rev/3-9c38aab9b6efed70a6cd6507aefee043
+38 verbose headers { 'content-type': 'application/json',
+38 verbose headers   'cache-control': 'max-age=300',
+38 verbose headers   'content-length': '165',
+38 verbose headers   'accept-ranges': 'bytes',
+38 verbose headers   date: 'Tue, 15 May 2018 07:21:45 GMT',
+38 verbose headers   via: '1.1 varnish',
+38 verbose headers   connection: 'keep-alive',
+38 verbose headers   'x-served-by': 'cache-pao17436-PAO',
+38 verbose headers   'x-cache': 'MISS',
+38 verbose headers   'x-cache-hits': '0',
+38 verbose headers   'x-timer': 'S1526368905.797566,VS0,VE217',
+38 verbose headers   vary: 'Accept-Encoding, Accept' }
+39 verbose request invalidating /Users/faethonm/.npm/registry.npmjs.org/pastebud on DELETE
+40 verbose stack Error: You can no longer unpublish this version. Please deprecate it instead
+40 verbose stack npm deprecate -f 'pastebud@*' "this package has been deprecated" : pastebud
+40 verbose stack     at makeError (/Users/faethonm/.nvm/versions/node/v6.13.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/Users/faethonm/.nvm/versions/node/v6.13.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at Request._callback (/Users/faethonm/.nvm/versions/node/v6.13.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/Users/faethonm/.nvm/versions/node/v6.13.0/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/Users/faethonm/.nvm/versions/node/v6.13.0/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/Users/faethonm/.nvm/versions/node/v6.13.0/lib/node_modules/npm/node_modules/request/request.js:969:12)
+41 verbose statusCode 400
+42 verbose pkgid pastebud
+43 verbose cwd /Users/faethonm/Development/pastebud/pastebud-npm
+44 error Darwin 16.7.0
+45 error argv "/Users/faethonm/.nvm/versions/node/v6.13.0/bin/node" "/Users/faethonm/.nvm/versions/node/v6.13.0/bin/npm" "unpublish" "pastebud@1.0.0" "--force"
+46 error node v6.13.0
+47 error npm  v3.10.10
+48 error code E400
+49 error You can no longer unpublish this version. Please deprecate it instead
+49 error npm deprecate -f 'pastebud@*' "this package has been deprecated" : pastebud
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]

@@ -6,15 +6,14 @@ A Node.js package to send and receive content from pastebud
 
 First, install the package using npm:
 
-    npm install pastebud --save
+    npm install pastebud
 
 Then, require the package and use it like so:
 
-    var pasteBud = require('pastebud);
+    var pastebud = require('pastebud);
 
-    pastebud('send', 'example')
+    pastebud('send', 'example text here')
       .then((resp) => {
-        // example key here
         console.log(resp)
       })
       .catch((err) => {
@@ -23,9 +22,11 @@ Then, require the package and use it like so:
 
     pastebud('get', 'example key here')
       .then((resp) => {
-        // response here this case 'example'
+        console.log(resp)
+      })
+      .catch((err) => {
+        console.log(err)
       })
 
 ## License
-
 Apache 2.0

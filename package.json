@@ -1,6 +1,6 @@
 {
   "name": "pastebud",
-  "version": "0.0.2",
+  "version": "1.0.1",
   "description": "Share everything made easy ",
   "homepage": "https://github.com/faethonm/pastebud-npm#readme",
   "bugs": {
@@ -9,6 +9,7 @@
   "license": "ISC",
   "author": "Faethon Milikouris <faethon.milikouris@gmail.com>",
   "main": "index.js",
+  "bin": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/faethonm/pastebud-npm.git"
