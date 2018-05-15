@@ -28,5 +28,17 @@ Then, require the package and use it like so:
         console.log(err)
       })
 
+### CLI Usage:
+
+```bash
+
+$ npm i -g pastebud
+$  pastebud send hello
+including3850
+$ pastebud get including3850
+hello
+
+```
+
 ## License
 Apache 2.0

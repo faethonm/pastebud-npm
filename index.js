@@ -72,7 +72,7 @@ if (require.main === module) {
   var args = process.argv.slice(2);
   const command = args[0];
   const content = args[1];
-  pastebud(command, content)
+  pasteBud(command, content)
   .then((resp) => {
     console.log(resp);
   })
