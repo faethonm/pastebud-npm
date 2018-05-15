@@ -1,6 +1,6 @@
-"use strict";
+#!/usr/bin/env node
 
-var request = require('request');
+const request = require('request');
 const url = 'https://pastebud.herokuapp.com:443/api/v1';
 
 function pasteBud(command, content) {
