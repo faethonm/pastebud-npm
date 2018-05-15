@@ -1,23 +1,22 @@
 {
   "name": "pastebud",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "Share everything made easy ",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "homepage": "https://github.com/faethonm/pastebud-npm#readme",
+  "bugs": {
+    "url": "https://github.com/faethonm/pastebud-npm/issues"
   },
+  "license": "ISC",
+  "author": "Faethon Milikouris <faethon.milikouris@gmail.com>",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/faethonm/pastebud-npm.git"
   },
-  "author": "Faethon Milikouris <faethon.milikouris@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/faethonm/pastebud-npm/issues"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/faethonm/pastebud-npm#readme",
   "dependencies": {
-    "request": "^2.85.0",
-    "yargs": "^11.0.0"
+    "request": "^2.85.0"
   }
 }
