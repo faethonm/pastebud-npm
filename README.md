@@ -12,7 +12,7 @@ Then, require the package and use it like so:
 
     var pastebud = require('pastebud);
 
-    pastebud('send', 'example text here')
+    pastebud('post', 'example text here')
       .then((resp) => {
         console.log(resp)
       })
@@ -33,7 +33,7 @@ Then, require the package and use it like so:
 ```bash
 
 $ npm i -g pastebud
-$  pastebud send hello
+$  pastebud post hello
 including3850
 $ pastebud get including3850
 hello

@@ -4,7 +4,7 @@ const request = require('request');
 const url = 'https://pastebud.herokuapp.com:443/api/v1';
 
 function pasteBud(command, content) {
-  function sendContent(content) {
+  function post(content) {
     return new Promise((resolve, reject) => {
       const headers = {
         'Content-Type': 'application/json',
@@ -12,19 +12,19 @@ function pasteBud(command, content) {
       request.post({
         url: `${url}/posts`,
         headers,
-        body: JSON.stringify({content: content})
+        body: JSON.stringify({post: content})
       }, (error, response) => {
         if (error) {
           reject(error)
         } else {
-          const body = JSON.parse(response.body);
-          resolve(body.id);
+          const id = response.body
+          resolve(id);
         }
       });
     });
   }
 
-  function getContent(code) {
+  function get(code) {
     return new Promise((resolve, reject) => {
       const headers = {
         'Content-Type': 'application/json',
@@ -46,15 +46,15 @@ function pasteBud(command, content) {
     if (command === null) {
       const errorMsg = 'need to speficy command'
       reject(errorMsg);
-    } else if (command === 'send') {
-      sendContent(content).then((content) => {
+    } else if (command === 'post') {
+      post(content).then((content) => {
         resolve(content);
         return callback(null, content);
       }).catch((err) => {
         reject(err);
       })
     } else if (command === 'get') {
-      getContent(content).then((content) => {
+      get(content).then((content) => {
         resolve(content);
         return callback(null, content);
       }).catch((err) => {
