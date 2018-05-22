@@ -15,9 +15,11 @@
     "url": "git+https://github.com/faethonm/pastebud-npm.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "istanbul cover _mocha"
   },
   "dependencies": {
+    "chai": "^4.1.2",
+    "istanbul": "^0.4.5",
     "mocha": "^5.1.1",
     "request": "^2.85.0"
   }
