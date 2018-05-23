@@ -82,7 +82,7 @@ if (require.main === module) {
   const content = args[1];
   pasteBud(command, content)
   .then((resp) => {
-    console.log(resp);
+    console.log('res',resp);
   })
   .catch((err) =>{
     if (err) {
@@ -91,6 +91,4 @@ if (require.main === module) {
       console.log('Error');
     }
   });
-
-
 }
