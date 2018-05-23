@@ -1,5 +1,7 @@
 # PasteBud
 
+[![Build Status](https://travis-ci.org/faethonm/pastebud-npm.svg?branch=master)](https://travis-ci.org/faethonm/pastebud-npm)
+
 A Node.js package to send and receive content from pastebud
 
 ## Usage
